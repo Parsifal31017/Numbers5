@@ -20,7 +20,7 @@ namespace Numbers5
                     if (i % 5 == 0)
                         Console.WriteLine("May");
                 }
-                Console.WriteLine();
+                Console.ReadKey();
             }
         }
     }
