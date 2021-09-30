@@ -13,14 +13,16 @@ namespace Numbers5
                 {
                     Console.WriteLine(i);
                 }
+                else if (i % 3 == 0 & i % 5 == 0)
+                {
+                    Console.WriteLine("OuuMay");
+                }
                 else
                 {
                     if (i % 3 == 0)
                         Console.WriteLine("Ouu");
                     if (i % 5 == 0)
                         Console.WriteLine("May");
-                    if (i % 3 == 0 & i % 5 == 0)
-                        Console.WriteLine("OuuMay");
                 }
             }
             Console.ReadKey();
