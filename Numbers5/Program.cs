@@ -4,7 +4,7 @@ namespace Numbers5
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             int i = 0;
             while (i++ <= 99)
