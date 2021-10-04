@@ -6,14 +6,14 @@ namespace Numbers5
     {
         static void Main()
         {
-            Console.Write("Введите текст: ");
-            string text1 = Console.ReadLine();
-            Console.Write("Введите число: ");
-            int number1 = int.Parse(Console.ReadLine());
-            Console.Write("Введите текст: ");
-            string text2 = Console.ReadLine();
-            Console.Write("Введите число: ");
-            int number2 = int.Parse(Console.ReadLine());
+            Console.Write("Введите число и текст через запятую: ");
+            string[] tokens = Console.ReadLine().Split(',');
+            string text1 = tokens[1].Trim();
+            int number1 = int.Parse(tokens[0]);
+            Console.Write("Введите число и текст через запятую: ");
+            string[] token = Console.ReadLine().Split(',');
+            string text2 = token[1].Trim();
+            int number2 = int.Parse(token[0]);
             for (var i = 1; i <= 100; i++)
             {
                 var dividesBy3 = i % number1 == 0;
