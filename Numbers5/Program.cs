@@ -6,24 +6,19 @@ namespace Numbers5
     {
         static void Main()
         {
-            int i = 0;
-            while (i++ <= 99)
+            for (var i = 1; i <= 100; i++)
             {
-                if (i % 3 != 0 && i % 5 != 0)
-                {
-                    Console.WriteLine(i);
-                }
-                else if (i % 3 == 0 & i % 5 == 0)
-                {
+                var dividesBy3 = i % 3 == 0;
+                var dividesBy5 = i % 5 == 0;
+
+                if (dividesBy3 && dividesBy5)
                     Console.WriteLine("OuuMay");
-                }
+                else if (dividesBy3)
+                    Console.WriteLine("Ouu");
+                else if (dividesBy5)
+                    Console.WriteLine("May");
                 else
-                {
-                    if (i % 3 == 0)
-                        Console.WriteLine("Ouu");
-                    if (i % 5 == 0)
-                        Console.WriteLine("May");
-                }
+                    Console.WriteLine(i);
             }
             Console.ReadKey();
         }
