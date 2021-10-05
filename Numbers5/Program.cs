@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace Numbers5
 {
@@ -6,6 +7,7 @@ namespace Numbers5
     {
         static void Main()
         {
+            UTF8Encoding utf8 = new UTF8Encoding();
             Console.Write("Введите число и текст через запятую: ");
             string[] tokens = Console.ReadLine().Split(',');
             string text1 = tokens[1].Trim();
